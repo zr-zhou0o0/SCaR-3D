@@ -114,15 +114,15 @@ python reconstruct.py \
 ---
 
 ## Citation
-
+<!-- 
 ```bibtex
-<!-- @inproceedings{anonymous2026scar3d,
+@inproceedings{anonymous2026scar3d,
   title={SCAR-3D: 3D Scene Change Modeling with Consistent Multi-View Aggregation},
   author={Anonymous},
   booktitle={International Conference on 3D Vision (3DV)},
   year={2026}
-} -->
-```
+}
+``` -->
 
 ---
 
