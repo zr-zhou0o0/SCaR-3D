@@ -92,14 +92,18 @@ python reconstruct.py \
 
 ## Results
 
-### Quantitative Comparison (CCS3D)
+### Quantitative Change Detection Results on CCS3D Dataset
 
-| Method       | F1 ↑     | IoU ↑     |
-|--------------|----------|-----------|
-| Pixel-Diff   | 0.318    | 0.198     |
-| Feature-Diff | 0.450    | 0.343     |
-| 3DGS-CD      | 0.512    | 0.416     |
-| **Ours**     | **0.724**| **0.650** |
+| Method    | Livingroom F1 | Livingroom IoU | Bookcase F1 | Bookcase IoU | Desk F1 | Desk IoU | Bedroom F1 | Bedroom IoU | Average F1 | Average IoU |
+|-----------|---------------|----------------|-------------|--------------|---------|----------|------------|-------------|------------|-------------|
+| PixDif    | 0.273         | 0.162          | 0.398       | 0.254        | 0.315   | 0.201    | 0.286      | 0.176       | 0.318      | 0.198       |
+| FeatDif   | 0.420         | 0.302          | 0.480       | 0.323        | 0.320   | 0.256    | 0.705      | 0.584       | 0.450      | 0.343       |
+| CL-Splat  | 0.789         | 0.657          | 0.567       | 0.399        | 0.294   | 0.199    | 0.501      | 0.341       | 0.538      | 0.399       |
+| MV3DCD    | 0.478         | 0.329          | 0.291       | 0.178        | 0.449   | 0.295    | 0.547      | 0.413       | 0.441      | 0.304       |
+| 3DGS-CD   | 0.897         | 0.815          | 0.525       | 0.408        | 0.477   | 0.353    | 0.148      | 0.089       | 0.512      | 0.416       |
+| **Ours**  | **0.955**     | **0.914**      | **0.610**   | **0.477**    | 0.423   | **0.377**| **0.909**  | **0.834**   | **0.724**  | **0.650**   |
+
+*Note: Best results are highlighted in bold. Our method achieves state-of-the-art performance on most scenes and overall average metrics.*
 
 ### Qualitative Examples
 
