@@ -11,7 +11,7 @@
 
 <p align="center">
     <a href='#'>
-        <img src='https://img.shields.io/badge/Paper-PDF-red?style=plastic&logo=adobeacrobatreader&logoColor=red' alt='Paper PDF'>
+        <img src='https://img.shields.io/badge/Paper-PDF-red?style=plastic&logo=adobeacrobatreader&logoColor=red' alt='Paper ArXiv'>
     </a>
     <a href='#'>
         <img src='https://img.shields.io/badge/Dataset-CCS3D-blue?style=plastic&logo=Google%20sheets&logoColor=blue' alt='Dataset'>
@@ -39,17 +39,53 @@ SCAR-3D is a novel 3D scene change detection and reconstruction framework that i
 
 ---
 
-## 📦Installation
+## 🔨 Installation
 
-*(Code will be released upon acceptance.)*
 
+#### Prerequisites
+- CUDA 12.4 or higher
+- Python 3.8
+- Conda (recommended)
+
+#### Step 1: Clone the Repository
 ```bash
-# Coming soon
+git clone https://github.com/zr-zhou0o0/SCaR-3D.git
+cd SCaR-3D
 ```
+
+#### Step 2: Create Conda Environment
+```bash
+conda create -n scar3d python=3.8 -y
+conda activate scar3d
+```
+
+#### Step 3: Install PyTorch and CUDA Dependencies
+```bash
+pip install torch==2.4.1 torchvision torchaudio --index-url https://download.pytorch.org/whl/cu124
+```
+
+#### Step 4: Install Other Dependencies
+```bash
+pip install -r requirements.txt
+```
+
+#### Step 5: Install Other Required Packages from Source
+```bash
+pip install git+https://github.com/yformer/EfficientSAM.git@c9408a74b1db85e7831977c66e9462c6f4891729
+
+pip install git+https://github.com/camenduru/simple-knn.git
+
+pip install git+https://github.com/rahul-goel/fused-ssim.git
+
+pip install submodules/diff-point-rasterization
+
+```
+
+## 📦 Pretrained Weights
 
 ---
 
-## Dataset
+## 📊 Dataset
 
 ### CCS3D (Controllable Change in 3D Scenes)
 A synthetic dataset built with Blender, featuring four complex indoor scenes:
@@ -58,16 +94,28 @@ A synthetic dataset built with Blender, featuring four complex indoor scenes:
 - `Livingroom`
 - `Bedroom`
 
+
 Each scene supports:
 - Multiple change types: insertion, removal, translation, rotation, mixed.
 - Complex camera trajectories simulating real-world navigation.
 - Fine-grained object-level annotations.
 
-Download link and preprocessing scripts will be provided upon release.
+Download the CCS3D dataset [here](#).
+
+### 3DGS-CD 
+Our processed 3DGS-CD dataset can be downloaded [here](#).
+
+### Customized Datasets
+
+#### Dataset Creation
+
+```bash
+# Coming Soon
+```
 
 ---
 
-## Usage
+## 💡Usage
 
 ### Change Detection
 ```bash
@@ -89,7 +137,7 @@ python reconstruct.py \
 ```
 
 ---
-
+<!-- 
 ## Results
 
 ### Quantitative Change Detection Results on CCS3D Dataset
@@ -103,7 +151,7 @@ python reconstruct.py \
 | 3DGS-CD   | 0.897         | 0.815          | 0.525       | 0.408        | 0.477   | 0.353    | 0.148      | 0.089       | 0.512      | 0.416       |
 | **Ours**  | **0.955**     | **0.914**      | **0.610**   | **0.477**    | 0.423   | **0.377**| **0.909**  | **0.834**   | **0.724**  | **0.650**   |
 
-*Note: Best results are highlighted in bold. Our method achieves state-of-the-art performance on most scenes and overall average metrics.*
+*Note: Best results are highlighted in bold. Our method achieves state-of-the-art performance on most scenes and overall average metrics.* -->
 
 ### Qualitative Examples
 
@@ -114,8 +162,10 @@ python reconstruct.py \
 ---
 
 ## Citation
-<!-- 
-```bibtex
+
+TBD
+
+<!-- ```bibtex
 @inproceedings{anonymous2026scar3d,
   title={SCAR-3D: 3D Scene Change Modeling with Consistent Multi-View Aggregation},
   author={Anonymous},
@@ -126,10 +176,10 @@ python reconstruct.py \
 
 ---
 
-## Acknowledgements
+<!-- ## Acknowledgements -->
 
 <!-- This work was supported by anonymous institutions. -->
- We thank the authors of 3DGS, EfficientSAM, COLMAP, and Blender for their open-source contributions.
+ <!-- We thank the authors of 3DGS, EfficientSAM, COLMAP, and Blender for their open-source contributions. -->
 
 <!-- --- -->
 <!-- **Note**: This is a confidential submission to 3DV 2026. Code and data will be released upon acceptance. -->
