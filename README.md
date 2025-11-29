@@ -1,23 +1,33 @@
 <h2 align="center">
-  <b>SCAR-3D: 3D Scene Change Modeling with Consistent Multi-View Aggregation</b>
+  <b>SCaR-3D: 3D Scene Change Modeling with Consistent Multi-View Aggregation</b>
   <br>
-  <b><i>3DV 2026 Submission #332</i></b>
+  <b><i>3DV 2026</i></b>
 </h2>
 
 <p align="center">
-    <!-- Zirui Zhou, Junfeng Ni, Shujie Zhang, Yixin Chen, Siyuan Huang -->
-    Anonymous Authors
+    <a href="https://github.com/zr-zhou0o0">Zirui Zhou</a><sup>1</sup>,
+    <a href="https://dali-jack.github.io/Junfeng-Ni/">Junfeng Ni</a><sup>1,2</sup>,
+    <a href="https://hishujie.github.io/">Shujie Zhang</a><sup>1</sup>,
+    <a href="https://yixchen.github.io/">Yixin Chen</a><sup>2✉</sup>,
+    <a href="https://siyuanhuang.com/">Siyuan Huang</a><sup>2✉</sup>
 </p>
 
 <p align="center">
-    <a href='#'>
-        <img src='https://img.shields.io/badge/Paper-PDF-red?style=plastic&logo=adobeacrobatreader&logoColor=red' alt='Paper ArXiv'>
+    <sup>1</sup>Tsinghua University &nbsp;&nbsp; <sup>2</sup>State Key Laboratory of General Artificial Intelligence, BIGAI
+</p>
+
+<p align="center">
+    <a href='https://zr-zhou0o0.github.io/SCaR-3D.github.io/'>
+        <img src='https://img.shields.io/badge/Project-Page-Green?style=plastic&logo=googlechrome&logoColor=green' alt='Project Page'>
+    </a>
+    <a href='https://zr-zhou0o0.github.io/SCaR-3D.github.io/'>
+        <img src='https://img.shields.io/badge/Paper-PDF-red?style=plastic&logo=adobeacrobatreader&logoColor=red' alt='Paper PDF'>
     </a>
     <a href='#'>
         <img src='https://img.shields.io/badge/Dataset-CCS3D-blue?style=plastic&logo=Google%20sheets&logoColor=blue' alt='Dataset'>
     </a>
-    <a href='#'>
-        <img src='https://img.shields.io/badge/Code-Coming Soon-green?style=plastic&logo=github&logoColor=green' alt='Code'>
+    <a href='https://github.com/zr-zhou0o0/SCaR-3D'>
+        <img src='https://img.shields.io/badge/Code-Github-black?style=plastic&logo=github&logoColor=white' alt='Code'>
     </a>
 </p>
 
