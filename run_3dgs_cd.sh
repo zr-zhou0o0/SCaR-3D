@@ -1,5 +1,4 @@
-# DATASETS=("Bench" "Desk" "Sill" "Swap" "Mustard")
-DATASETS=("Bench")
+DATASETS=("Bench" "Desk" "Sill" "Swap" "Mustard")
 DATASET_ROOT="dataset/3DGS-CD" 
 OUTPUT_ROOT="outputs/3DGS-CD" 
 CONFIG_ROOT="configs/3DGS-CD"
@@ -25,13 +24,13 @@ for i in "${!DATASETS[@]}"; do
     fi
 
     # Render Origin
-    # python render.py -m ${MODEL_DIR} -s ${DATASET_DIR} -c post --point_cloud_name point_cloud --render_name pre_origin --iteration 30000
+    python render.py -m ${MODEL_DIR} -s ${DATASET_DIR} -c post --point_cloud_name point_cloud --render_name pre_origin --iteration 30000
 
     # Get Difference Map
-    # python change_detection.py -s ${DATASET_DIR} --mask_root ${MASK_DIR} -m ${MODEL_DIR} --config ${CONFIG} -c post --convert_SHs_python --point_cloud_name point_cloud --get_signed_difference --get_test_post
+    python change_detection.py -s ${DATASET_DIR} --mask_root ${MASK_DIR} -m ${MODEL_DIR} --config ${CONFIG} -c post --convert_SHs_python --point_cloud_name point_cloud --get_signed_difference --get_test_post
     
     # Get Trace
-    # python change_detection.py -s ${DATASET_DIR} --mask_root ${MASK_DIR} -m ${MODEL_DIR} --config ${CONFIG} -c post --convert_SHs_python --point_cloud_name point_cloud --iteration ${ITERATION} --get_trace --get_test_post
+    python change_detection.py -s ${DATASET_DIR} --mask_root ${MASK_DIR} -m ${MODEL_DIR} --config ${CONFIG} -c post --convert_SHs_python --point_cloud_name point_cloud --iteration ${ITERATION} --get_trace --get_test_post
 
     # Get Fine Masks
     python change_detection.py -s ${DATASET_DIR} --mask_root ${MASK_DIR} -m ${MODEL_DIR} --config ${CONFIG} -c post --convert_SHs_python --point_cloud_name point_cloud --iteration ${ITERATION} --get_test_post --get_prompt

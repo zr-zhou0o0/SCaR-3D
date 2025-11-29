@@ -115,8 +115,26 @@ Download the CCS3D dataset [here](#).
 Our processed 3DGS-CD dataset can be downloaded [here](#).
 
 ### Customized Datasets
+<!-- #### Dataset Creation -->
+#### Dataset Structure
 
-#### Dataset Creation
+The dataset should be organized as follows:
+
+```
+dataset/
+└── <dataset_name>/
+    ├── <scene_name>/
+    │   ├── images/          # All images
+    │   ├── train-pre/       # Pre-change training images
+    │   ├── train-post/      # Post-change training images
+    │   ├── test-pre/        # Pre-change test images
+    │   ├── test-post/       # Post-change test images
+    │   ├── gt-pre-mask/     # Ground truth masks for pre-change
+    │   ├── gt-post-mask/    # Ground truth masks for post-change
+    │   ├── sparse/          # COLMAP sparse reconstruction
+    │   └── <scene_name>.db  # COLMAP database
+    └── ...
+```
 
 ```bash
 # Coming Soon
@@ -133,6 +151,9 @@ bash run_ccs3d.sh
 
 # 3DGS-CD Dataset
 bash run_3dgs_cd.sh
+
+# If you want to train 3DGS models from scratch, use the following command:
+bash run_train.sh
 ```
 
 <!-- ### Continual Reconstruction
@@ -181,12 +202,5 @@ Comming soon
 
 ---
 
-<!-- ## Acknowledgements -->
-
-<!-- This work was supported by anonymous institutions. -->
- <!-- We thank the authors of 3DGS, EfficientSAM, COLMAP, and Blender for their open-source contributions. -->
-
-<!-- --- -->
-<!-- **Note**: This is a confidential submission to 3DV 2026. Code and data will be released upon acceptance. -->
 
 

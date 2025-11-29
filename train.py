@@ -47,10 +47,10 @@ def training(dataset, opt, pipe, testing_iterations, saving_iterations, checkpoi
 
     print("start checkpoint: ", start_checkpoint)
     scene = Scene(dataset, gaussians, load_iteration=start_checkpoint) 
-    # 因为原版用的Gaussianmodel和incre不同
+    if start_checkpoint is not None:
+        first_iter = int(start_checkpoint)
 
     gaussians.training_setup(opt)
-    gaussians.initialize_state_mask() 
 
     bg_color = [1, 1, 1] if dataset.white_background else [0, 0, 0]
     background = torch.tensor(bg_color, dtype=torch.float32, device="cuda")
