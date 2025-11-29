@@ -92,6 +92,10 @@ pip install submodules/diff-point-rasterization
 
 ## 📦 Pretrained Weights
 
+Download the pretrained EfficientSAM weights [here](#).
+
+Our pretrained 3DGS models can be downloaded [here](#).
+
 ---
 
 ## 📊 Dataset
