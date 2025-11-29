@@ -2,14 +2,16 @@ mask:
   use_dynamic_thre: 1
   difference_map_threshold_left: -0.17
   difference_map_threshold_right: 0.28
+  difference_map_threshold: 0.6
 
   area_threshold: 20
   error_views: [""]
   render_to_bin: 90
-  grid_size: 64
+  grid_size: [64, 120]
   IoU_threshold: 0.01
 
   prune: 1 
+  detect_overlap: 0
 
 evaluation:
   mask_threshold: 1

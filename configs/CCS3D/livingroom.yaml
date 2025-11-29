@@ -3,6 +3,7 @@ mask:
   use_dynamic_thre: 1
   difference_map_threshold_left: -0.17
   difference_map_threshold_right: 0.28
+  difference_map_threshold: 0.27
 
   error_views: [""]
 
@@ -12,10 +13,9 @@ mask:
   grid_size: [32]
   IoU_threshold: 0.1
 
-  prune: 1 # 正常使用
-  # prune: 0 # for view_pre
+  prune: 1 
 
-  detect_overlap: 1
+  detect_overlap: 0
   overlap_grid_size: 16
   overlap_IoU_threshold: 0.1
 

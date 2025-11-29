@@ -3,6 +3,7 @@ mask:
   use_dynamic_thre: 1
   difference_map_threshold_left: -0.17
   difference_map_threshold_right: 0.28
+  difference_map_threshold: 0.27
 
   error_views: [""]
 
@@ -14,10 +15,9 @@ mask:
 
   prune: 0
 
-  detect_overlap: 1
+  detect_overlap: 0
   overlap_grid_size: 16
   overlap_IoU_threshold: 0.1
 
 evaluation:
-  # mask_threshold: 1 # for change mask
-  mask_threshold: 125 # for 3ddif
+  mask_threshold: 1 

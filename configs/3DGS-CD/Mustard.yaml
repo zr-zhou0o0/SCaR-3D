@@ -3,15 +3,17 @@ mask:
   use_dynamic_thre: 0
   difference_map_threshold_left: -0.17
   difference_map_threshold_right: 0.28
+  difference_map_threshold: 0.6
 
   error_views: ["00147.png", "00149.png"]
 
   area_threshold: 50
-  render_to_bin: 50
-  grid_size: 64
-  IoU_threshold: 0.03
+  render_to_bin: 140
+  grid_size: [64, 15]
+  IoU_threshold: 0.05
 
-  prune: 1
+  prune: 0
+  detect_overlap: 0
 
 evaluation:
   mask_threshold: 1

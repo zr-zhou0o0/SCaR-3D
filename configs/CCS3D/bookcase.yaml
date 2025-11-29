@@ -1,22 +1,22 @@
 
 mask:
-  use_dynamic_thre: 1
-  difference_map_threshold_left: -0.17
-  difference_map_threshold_right: 0.28
+  use_dynamic_thre: 0
+  difference_map_threshold_left: -0.13
+  difference_map_threshold_right: 0.13
+  difference_map_threshold: 0.27
 
   error_views: [""]
 
   area_threshold: 50
-  render_to_bin: 80
-  grid_size: [10]
-  IoU_threshold: 0.1
+  render_to_bin: 40
+  grid_size: [60]
+  IoU_threshold: 0.01
 
   prune: 0
 
-  detect_overlap: 1
+  detect_overlap: 0
   overlap_grid_size: 16
   overlap_IoU_threshold: 0.1
 
 evaluation:
-  # mask_threshold: 1 # for change mask
-  mask_threshold: 120
+  mask_threshold: 1 
