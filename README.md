@@ -92,9 +92,11 @@ pip install submodules/diff-point-rasterization
 
 ## 📦 Pretrained Weights
 
-Download the pretrained EfficientSAM weights [here](#).
+Download the pretrained EfficientSAM weights [here](https://github.com/yformer/EfficientSAM).
 
-Our pretrained 3DGS models can be downloaded [here](#).
+Download the pretrained CCS3D model weights [here](https://huggingface.co/zr-zhou/CCS3D-pretrained).
+
+Download the pretrained 3DGS-CD model weights [here](https://huggingface.co/zr-zhou/3DGS-CD-pretrained).
 
 ---
 
@@ -113,10 +115,10 @@ Each scene supports:
 - Complex camera trajectories simulating real-world navigation.
 - Fine-grained object-level annotations.
 
-Download the CCS3D dataset [here](#).
+Download the CCS3D dataset [here](https://huggingface.co/datasets/zr-zhou/CCS3D).
 
 ### 3DGS-CD 
-Our processed 3DGS-CD dataset can be downloaded [here](#).
+Our processed 3DGS-CD dataset can be downloaded [here](https://huggingface.co/datasets/zr-zhou/3DGS-CD-processed).
 
 ### Customized Datasets
 <!-- #### Dataset Creation -->
@@ -140,9 +142,9 @@ dataset/
     └── ...
 ```
 
-```bash
+<!-- ```bash
 # Coming Soon
-```
+``` -->
 
 ---
 
