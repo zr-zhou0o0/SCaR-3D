@@ -23,7 +23,7 @@
     <a href='https://zr-zhou0o0.github.io/SCaR-3D.github.io/'>
         <img src='https://img.shields.io/badge/Paper-PDF-red?style=plastic&logo=adobeacrobatreader&logoColor=red' alt='Paper PDF'>
     </a>
-    <a href='#'>
+    <a href='https://huggingface.co/datasets/zr-zhou/CCS3D'>
         <img src='https://img.shields.io/badge/Dataset-CCS3D-blue?style=plastic&logo=Google%20sheets&logoColor=blue' alt='Dataset'>
     </a>
     <a href='https://github.com/zr-zhou0o0/SCaR-3D'>
