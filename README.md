@@ -17,10 +17,10 @@
 </p>
 
 <p align="center">
-    <a href='https://zr-zhou0o0.github.io/SCaR-3D.github.io/'>
+    <a href='https://zr-zhou0o0.github.io/SCaR3D/'>
         <img src='https://img.shields.io/badge/Project-Page-Green?style=plastic&logo=googlechrome&logoColor=green' alt='Project Page'>
     </a>
-    <a href='https://zr-zhou0o0.github.io/SCaR-3D.github.io/'>
+    <a href='https://arxiv.org/pdf/2512.22830'>
         <img src='https://img.shields.io/badge/Paper-PDF-red?style=plastic&logo=adobeacrobatreader&logoColor=red' alt='Paper PDF'>
     </a>
     <a href='https://huggingface.co/datasets/zr-zhou/CCS3D'>
