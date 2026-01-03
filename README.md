@@ -1,5 +1,5 @@
 <h2 align="center">
-  <b>SCaR-3D: 3D Scene Change Modeling with Consistent Multi-View Aggregation</b>
+  <b>SCaR-3D: 3D Scene Change Modeling With Consistent Multi-View Aggregation</b>
   <br>
   <b><i>3DV 2026</i></b>
 </h2>
@@ -195,16 +195,12 @@ bash run_train.sh
 
 ## Citation
 
-Comming soon
-
-<!-- ```bibtex
-@inproceedings{anonymous2026scar3d,
-  title={SCAR-3D: 3D Scene Change Modeling with Consistent Multi-View Aggregation},
-  author={Anonymous},
-  booktitle={International Conference on 3D Vision (3DV)},
+@inproceedings{zhou2026scar3d,
+  title={3D Scene Change Modeling With Consistent Multi-View Aggregation},
+  author={Zhou, Zirui and Ni, Junfeng and Zhang, Shujie and Chen, Yixin and Huang, Siyuan},
+  booktitle=ThreeDV,
   year={2026}
 }
-``` -->
 
 ---
 
