@@ -195,12 +195,14 @@ bash run_train.sh
 
 ## Citation
 
+```
 @inproceedings{zhou2026scar3d,
   title={3D Scene Change Modeling With Consistent Multi-View Aggregation},
   author={Zhou, Zirui and Ni, Junfeng and Zhang, Shujie and Chen, Yixin and Huang, Siyuan},
   booktitle=ThreeDV,
   year={2026}
 }
+```
 
 ---
 
